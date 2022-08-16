@@ -1,0 +1,172 @@
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 6px 6px 20px 8px rgb(0 0 0 / 30%);
+    z-index: 2;
+}
+
+.card.edit {
+    left: 22%;
+}
+
+.card__btn {
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease;
+}
+
+.card__btn:hover {
+    background-color: #00c327;
+    transition: all .3 ease;
+}
+
+.card__visa {
+    background-image: linear-gradient(to left bottom, #051937, #012757, #00449b, #0a52bf);
+}
+
+.card__master {
+    background-image: linear-gradient(to left bottom, #c30000, #d12a00, #df4100, #fa6900);
+}
+
+.card__amex {
+    background-image: linear-gradient(to left bottom, #030a2d, #010933, #00052e, #000243);
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+}
+
+.flag .flag__image {
+    background-size: contain;
+    display: block;
+    width: 100px;
+    height: 60px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+
+.master {
+    background-image: url("../assets/images/mastercard.png");
+}
+
+.visa {
+    background-image: url("../assets/images/visa.png");
+}
+
+.amex {
+    background-image: url("");
+}
+
+
+.text {
+    font-size: 2.4rem;
+    color: rgb(235, 235, 235);
+    text-shadow: 2px 2px 4px #000;
+}
+
+.text.small {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__info .title {
+    display: block;
+    color: rgb(194, 194, 194);
+}
+
+
+.form {
+    width: 100%;
+    max-width: 60%;
+    background-color: #ffffff;
+    padding: 40px 40px 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.form__content {
+    width: 100%;
+    max-width: 60%;
+    margin-left: auto;
+}
+
+.form .title {
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__group .form__control {
+    width: 48%;
+}
+
+.form__control {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.form__control input {
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    font-size: 1.4rem;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dcdeec;
+    box-sizing: border-box;
+}
+
+.form .btn {
+    width: 100%;
+    background-color: #146dcd;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.form .btn:hover {
+    box-shadow: 2px 2px 17px #116fd6;
+}
